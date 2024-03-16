@@ -1,0 +1,67 @@
+.main-content {
+    padding-top: 100px;
+    /* Adjust this value based on your AppBar's actual height */
+}
+
+.navBarTop {
+    background-color: #d92d27;
+    width: 100%;
+    justify-content: right;
+    display: flex;
+    padding: 0.25em;
+    border-radius: 20px;
+}
+
+.logo,
+.line,
+.seneca-logo {
+    margin: 5px;
+}
+
+.logo {
+    width: 180px;
+}
+
+.line {
+    height: 70px;
+}
+
+.seneca-logo {
+    height: 40px;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+}
+
+.hosted-by {
+    margin-bottom: 0;
+    font-size: small;
+    padding-top: 2px;
+}
+
+.nav-link {
+    text-decoration: none !important;
+    color: inherit !important;
+    display: flex;
+}
+
+.nav-link button {
+    background-color: #ffffff;
+    color: black;
+    border: none;
+    margin: 5px;
+    padding: 8px 15px;
+    border-radius: 50px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.nav-link button:hover {
+    /* background-color: #b22222;
+    color: white; */
+    background-color: #ffffff;
+    /* Keeps the background color the same on hover */
+    color: #b22222;
+    /* Changes the text color to red on hover */
+}
