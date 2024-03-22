@@ -8,10 +8,8 @@ import ChallengeSetsSection from "../Components/Home/ChallengeSets/challengeSets
 import WorkingSection from "../Components/Home/Working/workingSection";
 import SponsersBanner from "../Components/Home/Banner/sponsersBanner";
 import PartnersBanner from "../Components/Home/Banner/PartnerInsitituions";
-import { Sponsers } from "../Data/Schema/sponsers";
-import { Partners } from "../Data/Schema/partners";
 import WhoAreWe from "../Components/Home/whoAreWe";
-import Awards from "../Components/Home/Awards/awards";
+import FirstPrizeWinner from "../Components/FirstPrizeWinner/FirstPrizeWinner";
 import ImportantDates from "../Components/Home/Dates/importantDates";
 import WhoCanParticipate from "../Components/WhoParticipant/WhoParticipant";
 import Prize from "../Components/Prize/Prize";
@@ -19,7 +17,7 @@ import {
   WorkingData,
   ImportantDateData,
   AwardData,
-  ChallengeSetData,
+  CSData,
   TestimonialData,
   SponsersData,
   PartnersData,
@@ -119,13 +117,11 @@ export default function Home() {
         {toggleVideo && <VideoComponents />}
       </div>
 
-      <hr />
-
-      {/* <div className="animateSection rounded-xl mt-3">
-        <QandA />
-      </div> */}
-
-      {/* <hr /> */}
+      {/* test */}
+    
+      <div className="animateSection">
+        <FirstPrizeWinner />
+      </div>
 
       <div
         className={`animateSection rounded-xl mt-18 ${
@@ -134,42 +130,30 @@ export default function Home() {
       >
         <WhoAreWe />
       </div>
-      <hr />
       <div className="animateSection">
         <WhoCanParticipate />
       </div>
-      <hr />
       <div className="animateSection">
         <WorkingSection works={WorkingData} />
       </div>
-      <hr />
       <div className="animateSection">
         <Prize />
       </div>
-      <hr />
-
       <div className="animateSection">
         <ImportantDates dates={ImportantDateData} />
       </div>
-      <hr />
       <div className="animateSection">
-        <ChallengeSetsSection challengeSet={ChallengeSetData} />
+        <ChallengeSetsSection challengeSet={CSData} />
       </div>
-      <hr />
       <div className="animateSection rounded-xl mt-3">
         <PartnersBanner partners={PartnersData} />
       </div>
-
-      <hr />
       <div className="animateSection rounded-xl mt-3">
         <SponsersBanner sponsers={SponsersData} />
       </div>
-      <hr />
-
       <div className="animateSection">
         <Testimonial testimonials={TestimonialData} />
       </div>
-      <hr />
       <div className="animateSection">
         <SocialMediaSection />
       </div>
